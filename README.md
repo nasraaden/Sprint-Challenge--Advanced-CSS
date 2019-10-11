@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+- Responsive design is fluid and can adapt to different screen sizes using media queries. Adapative design is not fluid and uses different page widths and set sizes for those pages. Once the pages are loaded past the widths specified, it no longer responds. 
 
 2. Describe what it means to be mobile first vs desktop first.
+- Desktop first: designing the website for the biggest width and then using responsive design to go down to smaller specifications.
+- Mobile first: designing the website for the smallest width and then designing for larger specifications.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+- This is  sets the default font size to 10px so that the math is easier when using rems. That means if you set the font to 2rem, it means 20px. 
 
 4. How would you describe preprocessing to someone new to CSS?
-
+- As someone who is fairly new to CSS myself, I am still getting used to the concept of preprocessing. I do know that preprocessing helps with productivity and keeping your code DRY. Vanilla CSS does not allow writing pieces of code that can be reused through the whole thing (like a mix-in). With preprocessing, you can organize your code better by dividing the sections of the webpage into their own individual files and working from there instead of sifting through so many lines of code.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+- My favorite part of preprocessing is definitely nesting and having different sections of the page with their own files. As someone who loves organization, using CSS before LESS was so hard. I couldn't keep up with all the lines of code. The hardest thing is defining variables/mixins and using them properly. It saves so much time and so many lines of code, but only if it's done right. I am working on it.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

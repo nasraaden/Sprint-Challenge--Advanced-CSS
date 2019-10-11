@@ -1,5 +1,4 @@
 // Home Content
-
 .home {
 
   .intro {
@@ -11,19 +10,34 @@
     p {
       padding:0 15px;
     }
-  
+    
+    img{
+      border-radius: 5px;
+      @media @phone{
+        width: 100%;
+      }
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .fullwidth();
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        .fullwidth();
+        height: 100%;
+    }
+    }
+    @media @phone{
+      .delete{
+        display: none;
+      }
     }
   }
 
@@ -46,8 +60,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      .fullwidth();
+      padding: 3%;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone{
+        .fullwidth();
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,15 +81,24 @@
       }
 
       .btn {
+        @media @phone{
+          .fullwidth();
+          padding: 5%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        .fullwidth();
+        margin: 0;
+        margin-bottom: 3%;
+      }
       
       img {
-        width: 100%;
+        .fullwidth();
         height: auto;
         border-radius: 10px;
       }
